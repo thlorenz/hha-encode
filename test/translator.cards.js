@@ -18,11 +18,24 @@ function roundtrip(t, original) {
   spok(t, decoded, original)
 }
 
-test('\nround tripping multiple cards', function(t) {
+test('\nround tripping multiple cards including missing ones', function(t) {
   roundtrip(t, [ 'Ks', 'Th' ])
   roundtrip(t, [ 'As', 'Ad', 'Ks' ])
   roundtrip(t, [ 'Td', 'Js', 'Kc' ])
   roundtrip(t, [ '2d', '5c', 'Js', '8h' ])
+  roundtrip(t, [ '2d', '??', '5c', 'Js', '8h' ])
+  t.end()
+})
+
+test('\npassing null or other invalid card i.e. it was not present', function(t) {
+  const original = [ 'Ks', null, 'N/A', '?', '??' ]
+  const expected = [ 'Ks', '??', '??', '??', '??' ]
+
+  const translator = new CardsTranslator([ 0 ], original.length)
+  const encoded = translator.encode(original)
+  const decoded = translator.decode(encoded)
+
+  spok(t, decoded, expected)
   t.end()
 })
 
