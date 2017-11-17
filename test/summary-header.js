@@ -31,11 +31,10 @@ test('\nround tripping header 1', function(t) {
 test('\nround tripping header 2', function(t) {
   const original = {
     room      : 'pokerstars',
-    gametype  : 'cash',
+    gametype  : 'cashgame',
     currency  : '$',
     pokertype : 'holdem',
     limit     : 'nolimit',
-    level     : 'xii',
     maxseats  : 6,
     donation  : 0.01,
     rake      : 0.01,
