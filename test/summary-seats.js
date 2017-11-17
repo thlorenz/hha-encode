@@ -2,6 +2,7 @@
 
 const test = require('tape')
 const spok = require('spok')
+spok.talk = true
 // eslint-disable-next-line no-unused-vars
 const ocat = require('./util/ocat')
 
