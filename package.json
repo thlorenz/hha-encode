@@ -15,6 +15,8 @@
     "roman-decimal": "~1.0.1"
   },
   "devDependencies": {
+    "hha": "~0.6.0",
+    "hhp": "~0.5.1",
     "ocat": "~0.1.0",
     "spok": "~0.9.0",
     "tape": "~4.8.0"
