@@ -1,5 +1,4 @@
 'use strict'
-if (process.env.TRAVIS != null) return
 
 const test = require('tape')
 const spok = require('spok')
