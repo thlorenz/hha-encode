@@ -1,4 +1,4 @@
-# hha-encode
+# hha-encode [![build status](https://secure.travis-ci.org/thlorenz/hha-encode.svg?branch=master)](http://travis-ci.org/thlorenz/hha-encode)
 
 Encodes and decodes processed Pokerhands.
 
