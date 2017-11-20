@@ -13,6 +13,7 @@
   "homepage": "https://github.com/thlorenz/hha-encode",
   "dependencies": {
     "6bit-encoder": "~0.1.0",
+    "cards-52-encoder": "~0.1.0",
     "roman-decimal": "~1.0.1"
   },
   "devDependencies": {
