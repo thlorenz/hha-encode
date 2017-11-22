@@ -14,7 +14,7 @@
   "dependencies": {
     "6bit-encoder": "~0.1.0",
     "cards-52-encoder": "~0.1.0",
-    "kodieren": "~0.1.0",
+    "kodieren": "~0.2.0",
     "roman-decimal": "~1.0.1"
   },
   "devDependencies": {
